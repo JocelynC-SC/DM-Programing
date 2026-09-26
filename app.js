@@ -1,25 +1,17 @@
-//object
-const cat = {
-    name: "Kratos",
-    breed: "Tuxedo cat",
-    //method
-    meow: function(){
-        console.log(cat.name + "Meow! :3");
-    }
-};
+// The For Loop
 
-//functions
-function addTreats(treats){
-    return treats + 2;
+let toys = ["Mr. Squid", "Cardboard box", "Mouse toy"];
+let listContainer = document.getElementById("itemlist");
+
+for (let i = 0; i < toys.length; i++){
+    let listItem = document.createElement("li");
+    listItem.textContent = toys[i];
+    listContainer.appendChild(listItem);
 }
-cat.meow();
 
-let totalTreats = addTreats(3);
-console.log("Total treats:" + totalTreats);
+// The While Loop i think
+let treats = 3;
 
-//event
-let myButton = document.getElementById("btn");
 
-myButton.addEventListener("click", function(){
-    console.log("button was clicked");
-});
+// CSS change
+
