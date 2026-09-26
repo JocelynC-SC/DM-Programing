@@ -9,9 +9,28 @@ for (let i = 0; i < toys.length; i++){
     listContainer.appendChild(listItem);
 }
 
-// The While Loop i think
-let treats = 3;
+// The While Loop
 
+let treatBowl= 0;
+while (treatBowl < 100){
+    console.log("filling bowl... currently at " + treatBowl + "%");
+    treatBowl += 25;
+}
+console.log("Kratos's bowl is full!");
 
 // CSS change
+const text = document.querySelector(".title");
+const changeColor = document.querySelector(".change");
 
+let zoomies = false;
+
+changeColor.addEventListener("click", function(){
+    zoomies = !zoomies;
+    text.classList.toggle("change");
+    if (zoomies === true){
+        text.textContent = "Kratos has the zoomies! >:3";
+    }
+    else{
+        text.textContent = "Kratos is Calm :3";
+    }
+});
